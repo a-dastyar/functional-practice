@@ -12,7 +12,7 @@ public class FunctionalPractice {
 
     public static boolean isHappyNumber(int num) {
         if (num < 1)
-            throw new IllegalArgumentException("number is out of bound[1, 2^23-1]!");
+            throw new IllegalArgumentException("number is out of bound[1, 2^32-1]!");
         int sum = String.valueOf(num).chars()
                 .map(i -> i - 48)
                 .map(i -> i * i)
